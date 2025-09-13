@@ -1,111 +1,121 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title> My first Webpage</title>
-    </head>
-    <body>
-        <h1>Zhaskairat Ayaulym</h1>
-        <h2>SE-2433</h2>
-        <h3><b>About me:</b>I am a friendly and curious person. I like learning new things and enjoy spending time doing what makes me happy.</h3>
-        <!--Lists-->
-        <p>My hobbies:</p>
-        <ol>
-            <li>Reading books</li>
-            <li>Listening to music</li>
-            <li>Traveling</li>
-        </ol>
-        <p>My favorite Websites:</p>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My First Webpage</title>
+</head>
+<body>
+
+  <!-- Header -->
+  <h1>Zhaskairat Ayaulym</h1>
+  <h2>SE-2433</h2>
+  <h3>About me:</h3>
+  <p>I am a friendly and curious person. I like learning new things and enjoy spending time doing what makes me happy.</p>
+
+  <!-- Two-column layout using table -->
+  <table border="1" width="100%">
+    <tr>
+      <!-- Left column: Menu -->
+      <td width="25%" valign="top">
+        <h3>Menu</h3>
         <ul>
-            <li><a href="https://www.wikipedia.org/">Wikipedia</a></li>
-            <li><a href="https://www.khanacademy.org/">Khan Academy</a></li>
-            <li><a href="https://www.coursera.org/">Coursera</a></li>   
-        </ul>     
-        <img src="My photo.png" alt="A smiling person standing outdoors, wearing casual clothes, with trees and a blue sky in the background. The mood is cheerful and relaxed." width="300" height="350">
-        <!--Button-->
-        <br><button type="button">Click Me!</button>
-        <br><!--My Schedule-->
-        <br><table border="2">
-            <tr>
-                <td><b>Time</b></td>
-                <td><b>Monday</b></td>
-                <td><b>Tuesday</b></td>
-                <td><b>Wednesday</b></td>
-                <td><b>Thursday</b></td>
-                <td><b>Friday</b></td>
-            </tr>
-            <tr>
-                <td>14:00-14:50</td>
-                <td>Operating Systems</td>
-                <td>Russian Language 1</td>
-                <td>Design and Analysis of Algorithms</td>
-                <td>Design and Analysis of Algorithms</td>
-                <td>Design and Analysis of Algorithms</td>
-            </tr>
-            <tr>
-                <td>15:00-15:50</td>
-                <td>Operating Systems</td>
-                <td>Russian Language 1</td>
-                <td>Design and Analysis of Algorithms</td>
-                <td>Design and Analysis of Algorithms</td>
-                <td>WEB Technologies 1 (Front End)</td>
-            </tr>
-            <tr>
-                <td>18:00-18:50</td>
-                <td>Russian Language 1</td>
-                <td></td>
-                <td>WEB Technologies 1 (Front End)</td>
-                <td>Introduction to Finance</td>
-                <td>Introduction to Finance</td>
-            </tr>
-            <tr>
-                <td>19:00-19:50</td>
-                <td></td> 
-                <td></td>
-                <td>WEB Technologies 1 (Front End)</td>
-                <td>Introduction to Finance</td>
-                <td>Physical Education</td>
-            </tr>
+          <li><a href="#hobbies">Hobbies</a></li>
+          <li><a href="#websites">Websites</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#form">Form</a></li>
+        </ul>
 
-        </table>
+        <!-- Buttons in menu -->
+        <button onclick="location.href='#hobbies'">Go to Hobbies</button><br><br>
+        <button onclick="location.href='#schedule'">Go to Schedule</button><br><br>
+        <button onclick="location.href='#form'">Go to Form</button>
+      </td>
+
+      <!-- Right column: Main content -->
+      <td width="75%" valign="top">
+        <h3 id="hobbies">My Hobbies</h3>
+        <ol>
+          <li>Reading books</li>
+          <li>Listening to music</li>
+          <li>Traveling</li>
+        </ol>
+
+        <h3 id="websites">My Favorite Websites</h3>
+        <ul>
+          <li><a href="https://www.wikipedia.org/" target="_blank">Wikipedia</a></li>
+          <li><a href="https://www.khanacademy.org/" target="_blank">Khan Academy</a></li>
+          <li><a href="https://www.coursera.org/" target="_blank">Coursera</a></li>
+        </ul>
+
+        <img src="My photo.png" alt="My photo" width="200" height="250">
+
         <br>
-        <!--Layout-->
-        <table border="1">
-        <tr>
-            <td width="25%" valign="top">
-            <h3>Menu</h3>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            </td>
-            <td width="75%" valign="top">
-            <h2>Main Content</h2>
-            <p>
-                This is where your main content goes. You can add paragraphs, images, 
-                or even more tables if needed. The layout is divided into two columns: 
-                the left column for navigation or menu, and the right column for content.
-            </p>
-            </td>
-        </tr>
+        <button type="button" onclick="alert('Hello! Thanks for clicking 🎉')">Click Me!</button>
+
+        <h3 id="schedule">My Class Schedule</h3>
+        <table border="1" width="100%">
+          <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+          </tr>
+          <tr>
+            <td>14:00-14:50</td>
+            <td>Operating Systems</td>
+            <td>Russian Language 1</td>
+            <td>Algorithms</td>
+            <td>Algorithms</td>
+            <td>Algorithms</td>
+          </tr>
+          <tr>
+            <td>15:00-15:50</td>
+            <td>Operating Systems</td>
+            <td>Russian Language 1</td>
+            <td>Algorithms</td>
+            <td>Algorithms</td>
+            <td>Web Technologies</td>
+          </tr>
+          <tr>
+            <td>18:00-18:50</td>
+            <td>Russian Language 1</td>
+            <td></td>
+            <td>Web Technologies</td>
+            <td>Finance</td>
+            <td>Finance</td>
+          </tr>
+          <tr>
+            <td>19:00-19:50</td>
+            <td></td>
+            <td></td>
+            <td>Web Technologies</td>
+            <td>Finance</td>
+            <td>Physical Education</td>
+          </tr>
         </table>
-        <!--Emojis-->
-        <p>
-                Today I feel energized &#9889;, a bit curious &#129300;, and cheerful &#128522; — ready to help with anything you need!
-        </p>
-        <!--Forms-->
+
+        <p>Today I feel ⚡, 🤔, and 🙂 — ready to help with anything you need!</p>
+
+        <h3 id="form">Contact Form</h3>
         <form action="#">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" required><br><br>
 
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required><br><br>
 
-            <label for="color">Favorite Color:</label><br>
-            <input type="color" id="color" name="color"><br><br>
+          <label for="color">Favorite Color:</label><br>
+          <input type="color" id="color" name="color"><br><br>
 
-            <input type="submit" value="Submit">
+          <input type="submit" value="Submit">
         </form>
-    </body>
+      </td>
+    </tr>
+  </table>
+
+
+
+</body>
 </html>
